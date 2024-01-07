@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: $SERVICE_NAME
+  namespace: microservice-cicd
+spec:
+  selector:
+    app: $SERVICE_NAME
+  ports:
+    - protocol: TCP
+      port: $SERVICE_PORT
+      targetPort: $SERVICE_TARGET_PORT
+      nodePort: 32008
+  type: NodePort
+---

@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: $MICROSERVICE_NAME
+  namespace: microservice-cicd
+  labels:
+    app: $MICROSERVICE_NAME
+spec:
+  replicas: 2
+  template:
+    metadata:
+      name: $MICROSERVICE_NAME
+      labels:
+        app: $MICROSERVICE_NAME
+    spec:
+      imagePullSecrets:
+        - name: docker-registry-key
+      containers:
+        - name: $MICROSERVICE_NAME
+          image: $IMAGE_NAME:$IMAGE_TAG
+          ports:
+            - containerPort: $CONTAINER_PORT
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: kube
+          imagePullPolicy: IfNotPresent
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: $MICROSERVICE_NAME

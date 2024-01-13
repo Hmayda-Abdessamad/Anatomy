@@ -14,6 +14,7 @@ services:
       - "5432:5432"
     networks:
       - postgres
+      - spring
   pgadmin:
     container_name: pgadmin
     image: dpage/pgadmin4:latest
@@ -23,34 +24,44 @@ services:
       PGADMIN_CONFIG_SERVER_MODE: 'False'
     volumes:
       - pgadmin:/var/lib/pgadmin
+
     ports:
       - "5050:80"
+    depends_on:
+      - postgres
     networks:
       - postgres
+
   backend:
     container_name: backend
-    image: hmaydaabdo/anatomy:v2
-    environment:
-      SPRING_PROFILES_ACTIVE: docker
+    image: hmaydaaabdo/backend:final2
     ports:
       - "8080:8080"
     depends_on:
       - postgres
     networks:
-      - postgres
+      - spring
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
 
-  front:
-    container_name: front
-    image: hmaydaabdo/front:v1
+  frontend:
+    container_name: frontend
+    image:  hmaydaabdo/front:worked
     ports:
-      - "80:80"
-    networks:
-      - postgres
+      - "9090:80"
     depends_on:
       - backend
+    networks:
+      - spring
+
+
+
+
 
 networks:
   postgres:
+    driver: bridge
+  spring:
     driver: bridge
 
 volumes:

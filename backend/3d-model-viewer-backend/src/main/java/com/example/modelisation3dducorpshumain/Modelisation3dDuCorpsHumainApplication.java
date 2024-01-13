@@ -28,18 +28,5 @@ public class Modelisation3dDuCorpsHumainApplication {
         SpringApplication.run(Modelisation3dDuCorpsHumainApplication.class, args);
     }
 
-    @Bean
-    public CommandLineRunner initialiserAdmin() throws Exception {
-        return args -> {
-            var user = User.builder()
-                    .firstname("admin")
-                    .lastname("admin")
-                    .email("admin@admin")
-                    .password(passwordEncoder.encode("admin@admin"))
-                    .role(ADMIN)
-                    .build();
 
-            this.repo.save(user);
-        };
-    }
 }

@@ -40,8 +40,8 @@ public class SecurityConfiguration {
             .cors(cors -> {
                 CorsConfigurationSource source = request -> {
                     CorsConfiguration config = new CorsConfiguration();
-                    config.setAllowedOrigins(Arrays.asList("http://front:80"));
-                    config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE"));
+                    config.setAllowedOrigins(Arrays.asList("*"));
+                    config.setAllowedMethods(Arrays.asList("*"));
                     config.setAllowedHeaders(Arrays.asList("*"));
 
                     return config;

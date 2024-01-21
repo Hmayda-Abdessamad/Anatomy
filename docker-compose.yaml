@@ -34,7 +34,7 @@ services:
 
   backend:
     container_name: backend
-    image: hmaydaaabdo/backend:final2
+    image: hamzaezh/3d-backend-viewer:5
     ports:
       - "8080:8080"
     depends_on:

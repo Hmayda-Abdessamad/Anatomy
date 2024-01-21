@@ -110,6 +110,7 @@ Key highlights of the CI/CD pipeline:
    - **Backend Service** at [http://localhost:8080](http://localhost:8080).
    - **Frontend Service** at [http://localhost:9090](http://localhost:9090).
 
+![docker dash](/images/docker.png)
 
 3. To access the frontend, use the following credentials for the Admin account:
 

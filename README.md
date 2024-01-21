@@ -88,14 +88,26 @@ Key highlights of the CI/CD pipeline:
 ![ci/cd pipeline](/images/pipeline-archi.png)
 
 
-## VII. Running the Web Application
+## VII. Running the Docker Environment
 
-Start Docker and run the docker-compose.yaml file in the racine of the project with the commande: docker-compose up -d
+1. Start Docker and execute the following command in the root of the project to launch the containers:
+
+    ```bash
+    docker-compose up -d
+    ```
+
+2. The Docker Compose file (`docker-compose.yaml`) orchestrates four containers:
+
+   - **Database Service (PostgreSQL)**
+   - **pgAdmin Service** at [http://localhost:5050](http://localhost:5050) for database management.
+   - **Backend Service** at [http://localhost:8080](http://localhost:8080).
+   - **Frontend Service** at [http://localhost:9090](http://localhost:9090).
 
 
-* Access the Eureka dashboard at http://localhost:8761/ to view registered services.
-* Use the Gateway service (http://localhost:8888/) to interact with the microservices.
+2. To access the frontend, use the following credentials for the Admin account:
 
-This microservices architecture demonstrates key concepts, including service discovery, API gateway, service-to-service communication, and data association between microservices. The usage of Spring Boot simplifies the development and deployment of microservices within the application.
+- **Email:** admin@admin
+- **Password:** admin@admin
+
 
 ## VIII. Generate the .apk file for the mobile application

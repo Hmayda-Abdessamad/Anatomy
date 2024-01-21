@@ -105,7 +105,7 @@ Key highlights of the CI/CD pipeline:
 
 2. The Docker Compose file (`docker-compose.yaml`) orchestrates four containers:
 
-   - **Database Service (PostgreSQL)**
+    - **Database Service (PostgreSQL)**: This container will be initialized with the data from `/init.sql`, and the files (images/3D objects) already uploaded to the AWS S3 service.
    - **pgAdmin Service** at [http://localhost:5050](http://localhost:5050) for database management.
    - **Backend Service** at [http://localhost:8080](http://localhost:8080).
    - **Frontend Service** at [http://localhost:9090](http://localhost:9090).

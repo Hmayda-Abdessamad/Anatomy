@@ -58,23 +58,29 @@ onto the 3D object, as demonstrated in Figure 3(b).(a) List of categories (b) Li
 
 ## V. Web Application Examples
 Home page:
+
 ![home page](/images/dash.png)
 
 Management of Categories:
+
 ![Management of Categories](/images/cat.png)
 
 Management of 3d Organs:
+
 ![Management of 3d Organs](/images/objs.png)
 
 View 3D Organs:
+
 ![View 3D Organs](/images/demo.png)
 
 Edit 3D Organs:
+
 ![Edit 3D Organs](/images/edit.png)
 
 ## VI. CI/CD Pipeline
 🚀 Prod Environment 🚀 :
 In contrast, the prod environment was hosted on AWS as well, but we selected Kubernetes for container orchestration. This setup included one master node and two worker nodes, ensuring high availability and scalability.
+
 ![aws](/images/aws.png)
 
 🛠️Pipeline Overview🛠️ :

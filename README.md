@@ -57,20 +57,21 @@ onto the 3D object, as demonstrated in Figure 3(b).(a) List of categories (b) Li
 </p>
 
 ## V. Web Application Examples
-Home page :
-(/images/dash.png)
+Home page:
+![home page](/images/dash.png)
 
-Management of Categories :
-(/images/cat.png)
+Management of Categories:
+![Management of Categories](/images/cat.png)
 
-Management of 3d Organs :
-(/images/objs.png)
+Management of 3d Organs:
+![Management of 3d Organs](/images/objs.png)
 
-View 3D Organs :
-(/images/demo.png)
+View 3D Organs:
+![View 3D Organs](/images/demo.png)
 
-Edit 3D Organs :
-(/images/edit.png)
+Edit 3D Organs:
+![Edit 3D Organs](/images/edit.png)
+
 ## VI. CI/CD Pipeline
 🚀 Prod Environment 🚀 :
 In contrast, the prod environment was hosted on AWS as well, but we selected Kubernetes for container orchestration. This setup included one master node and two worker nodes, ensuring high availability and scalability.
@@ -90,7 +91,7 @@ Key highlights of the CI/CD pipeline:
 ## VII. Running the Web Application
 
 Start Docker and run the docker-compose.yaml file in the racine of the project with the commande: docker-compose up -d
-Run the ClientApplication, GatewayApplication, and VoitureApplication services.
+
 
 * Access the Eureka dashboard at http://localhost:8761/ to view registered services.
 * Use the Gateway service (http://localhost:8888/) to interact with the microservices.

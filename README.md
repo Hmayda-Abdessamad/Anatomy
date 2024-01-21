@@ -48,13 +48,10 @@ To enhance the learning experience, the student has the capability to peel away
 layers of the 3D model, providing a closer examination of internal structures and
 facilitating a deeper understanding of anatomical relationships. Additionally, the
 student can actively engage with the content by adding personal notes directly
-onto the 3D object, as demonstrated in Figure 3(b).
-(a) List of categories (b) List of objects in category
-<img src="/images/1.jpg" alt="app demo" width="200"/> 
+onto the 3D object, as demonstrated in Figure 3(b).(a) List of categories (b) List of objects in category
+<img src="/images/1.jpg" alt="app demo" width="250"/> <img src="/images/2.jpg" alt="app demo" width="250"/> 
 
-![app demo](/images/1.jpg) ![app demo](/images/2.jpg)
-![app demo](/images/3.jpg) ![app demo](/images/4.jpg)
-
+<img src="/images/3.jpg" alt="app demo" width="250"/> <img src="/images/4.jpg" alt="app demo" width="250"/> 
 
 ## V. Web Application Examples
 

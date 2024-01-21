@@ -57,13 +57,25 @@ onto the 3D object, as demonstrated in Figure 3(b).(a) List of categories (b) Li
 </p>
 
 ## V. Web Application Examples
+Home page :
+(/images/dash.png)
 
+Management of Categories :
+(/images/cat.png)
 
-## V. CI/CD Pipeline
-🚀 Prod Environment 🚀
+Management of 3d Organs :
+(/images/objs.png)
+
+View 3D Organs :
+(/images/demo.png)
+
+Edit 3D Organs :
+(/images/edit.png)
+## VI. CI/CD Pipeline
+🚀 Prod Environment 🚀 :
 In contrast, the prod environment was hosted on AWS as well, but we selected Kubernetes for container orchestration. This setup included one master node and two worker nodes, ensuring high availability and scalability.
 
-🛠️Pipeline Overview🛠️
+🛠️Pipeline Overview🛠️ :
 An essential component of this project was the establishment of a CI/CD (Continuous Integration/Continuous Delivery) pipeline. This pipeline significantly optimized our development workflow, minimizing manual errors and expediting our release cycle.
 Key highlights of the CI/CD pipeline:
 ◾ Version control integration for efficient collaboration.
@@ -75,12 +87,14 @@ Key highlights of the CI/CD pipeline:
 ![ci/cd pipeline](/images/pipeline-archi.png)
 
 
-## V. Running the Application
+## VII. Running the Web Application
 
-Start the Eureka service discovery by running the EurekaServerApplication.
+Start Docker and run the docker-compose.yaml file in the racine of the project with the commande: docker-compose up -d
 Run the ClientApplication, GatewayApplication, and VoitureApplication services.
 
 * Access the Eureka dashboard at http://localhost:8761/ to view registered services.
 * Use the Gateway service (http://localhost:8888/) to interact with the microservices.
 
 This microservices architecture demonstrates key concepts, including service discovery, API gateway, service-to-service communication, and data association between microservices. The usage of Spring Boot simplifies the development and deployment of microservices within the application.
+
+## VIII. Generate the .apk file for the mobile application

@@ -104,10 +104,22 @@ Key highlights of the CI/CD pipeline:
    - **Frontend Service** at [http://localhost:9090](http://localhost:9090).
 
 
-2. To access the frontend, use the following credentials for the Admin account:
+3. To access the frontend, use the following credentials for the Admin account:
 
 - **Email:** admin@admin
 - **Password:** admin@admin
 
 
 ## VIII. Generate the .apk file for the mobile application
+
+1. To generate the .apk for the mobile application, navigate to `/mobile/lib/network/api/Endpoints.dart` and update the URL for the backend.
+
+2. Run the following commands to generate the .apk:
+    ```bash
+    flutter clean 
+    flutter build apk --debug
+    ```
+
+3. Once the build process is complete, locate your .apk file in `/mobile/build/app/outputs/apk/debug`.
+
+

@@ -50,6 +50,8 @@ facilitating a deeper understanding of anatomical relationships. Additionally, t
 student can actively engage with the content by adding personal notes directly
 onto the 3D object, as demonstrated in Figure 3(b).
 (a) List of categories (b) List of objects in category
+<img src="/images/1.jpg" alt="app demo" width="200"/> 
+
 ![app demo](/images/1.jpg) ![app demo](/images/2.jpg)
 ![app demo](/images/3.jpg) ![app demo](/images/4.jpg)
 

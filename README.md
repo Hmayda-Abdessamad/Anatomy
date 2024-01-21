@@ -75,6 +75,7 @@ Edit 3D Organs:
 ## VI. CI/CD Pipeline
 🚀 Prod Environment 🚀 :
 In contrast, the prod environment was hosted on AWS as well, but we selected Kubernetes for container orchestration. This setup included one master node and two worker nodes, ensuring high availability and scalability.
+![aws](/images/aws.png)
 
 🛠️Pipeline Overview🛠️ :
 An essential component of this project was the establishment of a CI/CD (Continuous Integration/Continuous Delivery) pipeline. This pipeline significantly optimized our development workflow, minimizing manual errors and expediting our release cycle.
